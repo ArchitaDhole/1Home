@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        .image {
+            text-align: center;
+            padding: 2vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .li {
+            background-color: #ffff00;
+            padding: 2vh;
+            margin: 2vh;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .header ul li ul {
+            display: none;
+        }
+
+        .header ul li:hover {
+            background-color: #ffd900;
+        }
+
+        .header ul li:hover>ul {
+            display: block;
+        }
+
+        .header ul li ul {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .header ul li ul li {
+            background-color: #ffff00;
+            padding: 2vh;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .slcontainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #slider {
+            width: 50vw;
+            height: 50vh;
+            animation-name: animation;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin-left: 4vw;
+        }
+
+        @keyframes animation {
+            0% {
+                background-image: url(1.png);
+                background-size: cover;
+            }
+
+            14% {
+                background-image: url(2.png);
+                background-size: cover;
+            }
+
+            28% {
+                background-image: url(3.png);
+                background-size: cover;
+            }
+
+            42% {
+                background-image: url(4.png);
+                background-size: cover;
+            }
+
+            56% {
+                background-image: url(5.png);
+                background-size: cover;
+            }
+
+            70% {
+                background-image: url(6.png);
+                background-size: cover;
+            }
+
+            85% {
+                background-image: url(7.png);
+                background-size: cover;
+            }
+
+            100% {
+                background-image: url(1.png);
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="logo.png">
+    </div>
+    <div class="header">
+        <ul>
+            <li class="li"><a href="https://architadhole.github.io/1Home/">Home</a></li>
+            <li class="li">
+                About Us
+                <ul>
+                    <li><a href="https://architadhole.github.io/1About_Us/">About Us</a></li>
+                    <li><a href="https://architadhole.github.io/1Vision/">Vision</a></li>
+                    <li> <a href="https://architadhole.github.io/1Mission/">Mission</a> </li>
+                </ul>
+            </li>
+            <li class="li">Management
+                <ul>
+                    <li> <a href="https://architadhole.github.io/1Trust/"> Trust</a></li>
+                    <li> <a href="https://architadhole.github.io/1President/"> President's Message</a></li>
+                    <li> <a href="https://architadhole.github.io/1Secretary/"> Secretary's Message</a></li>
+                    <li> <a href="https://architadhole.github.io/1Principal/"> Principal's Message</a></li>
+                </ul>
+            </li>
+            <li class="li">Admission
+                <ul>
+                    <li>Courses
+                        <ul>
+                            <li>Science
+                                <ul>
+                                    <li> <a href="https://architadhole.github.io/1SFYJC/"> FYJC</a></li>
+                                    <li><a href="https://architadhole.github.io/1SSYJC/"> SYJC</a></li>
+                                </ul>
+                            </li>
+                            <li>Commerce
+                                <ul>
+                                    <li> <a href="https://architadhole.github.io/1CFYJC/"> FYJC</a></li>
+                                    <li><a href="https://architadhole.github.io/1CSYJC/"> SYJC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://architadhole.github.io/1Application_Form/">Application Form</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="li"> <a href="https://architadhole.github.io/1Contact_Us/">Contact Us</a> </li>
+            </li>
+        </ul>
+    </div>
+    <div class="slcontainer">
+        <div id="slider"> </div>
+    </div>
+</body>
+
+</html>
